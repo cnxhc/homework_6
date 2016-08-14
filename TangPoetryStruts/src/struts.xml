@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	<package name="tang" extends="struts-default">
+		<action name="searchAction" class="com.xhc.action.SearchAction" >
+			<result name="queryByNameSuccess">queryByNameSuccess.jsp</result>
+			<result name="queryByTitleSuccess">queryByTitleSuccess.jsp</result>
+			<result name="queryByContentSuccess">queryByContentSuccess.jsp</result>
+			<result name="queryByName_fail">queryByName_fail.jsp</result>
+			<result name="queryByTitle_fail">queryByTitle_fail.jsp</result>
+			<result name="queryByContent_fail">queryByContent_fail.jsp</result>
+		</action>
+	
+	</package>
+  
+</struts>
